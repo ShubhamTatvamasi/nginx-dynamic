@@ -7,6 +7,12 @@
 [![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/shubhamtatvamasi/nginx-dynamic/latest)](https://hub.docker.com/r/shubhamtatvamasi/nginx-dynamic)
 [![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/shubhamtatvamasi/nginx-dynamic)](https://hub.docker.com/r/shubhamtatvamasi/nginx-dynamic)
 
+deploy
+```bash
+git clone https://github.com/ShubhamTatvamasi/nginx-dynamic.git && \
+  kubectl apply -f ./nginx-dynamic
+```
+
 
 some useful commands
 ```bash
