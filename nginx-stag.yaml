@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nginx-dynamic
+  name: nginx-dynamic-stag
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-dynamic
+  template:
+    metadata:
+      labels:
+        app: nginx-dynamic
+    spec:
+      containers:
+      - image: shubhamtatvamasi/nginx-dynamic
+        name: nginx-dynamic
+        env:
+        - name: NGINX_ENV
+          value: "staging"
